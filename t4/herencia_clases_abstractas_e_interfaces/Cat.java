@@ -13,20 +13,17 @@ public class Cat extends Animal implements Pet{
     public String getName(){
         return name;
     }
-
+    
     public void setName(String n){
         name = n;
     }
 
-    public void play(){}
+    public void play(){
+        System.out.println("El gato camina.");
+    }
 
     public void eat(){
-        System.out.println("El gato come");
+        System.out.println("El gato come.");
     }
 
-    public void jugandoAlError(){
-        
-    }
-
-    
 }
