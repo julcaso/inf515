@@ -1,3 +1,12 @@
+/***************************************
+Autor:    Profesor Julio Castro Ortiz.
+Fecha:    9/5/2021.
+Semestre: 2021-10.
+Objetivo: Ejemplo docente.
+Tema:     Constructores.
+Materias: INF514, INF515.
+****************************************/
+
 public class Mesa{
     int cantidadPatas;
     String materialFabricacion;
