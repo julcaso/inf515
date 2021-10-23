@@ -7,6 +7,5 @@ public class VehiculoTest{
 
         Vehiculo miVehiculo2 = new Vehiculo("Jeep SUV", 290, "Azul");
         miVehiculo2.desplegarPantalla();
-
     }
 }
