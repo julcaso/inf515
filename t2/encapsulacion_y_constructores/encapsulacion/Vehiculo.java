@@ -1,25 +1,33 @@
+/* Encapsulación  o  information  hiding, se da en  los miembros de la case; es decir,
+con los atributos y los métodos. Un miembro atributo está  encapsulado cuando su nivel
+de acceso es privado. Para poder acceder a este atributo privado, se emplea la tecnica
+de crear métodos  de  acceso  llamados  getters y setters  para  setear  valores a los 
+atributos privados y tambien para obtener / consultar los valores de estos atributos. */
+
 public class Vehiculo{
     private String color;
     private int velocidadMaxima;
     private int cantidadDePuertas;
     private String tipoVehiculo;
 
-    // Metodos de acceso: getters y setters.
+    //Metodos de acceso: getters y setters.
+    //El metodo get sirve para obtener valores del atributo privado.
+    //El metodo set sirve para setear o asignar valores al atributo privado.
 
-    public void setColor(String parColor){
-        color = parColor;
+    public void setColor(String colorDelVehiculo){
+        color = colorDelVehiculo;
     }
 
     public String getColor(){
         return color;
     }
 
-    public void setVelocidadMaxima(int parVelocidadMaxima){
-        if (parVelocidadMaxima >= 300){
+    public void setVelocidadMaxima(int velocidadMaximaDelVehiculo){
+        if (velocidadMaximaDelVehiculo >= 300){
             velocidadMaxima = 0;
             System.out.println("\nError 1: velocidad invalida.");
         } else {
-            velocidadMaxima = parVelocidadMaxima;
+            velocidadMaxima = velocidadMaximaDelVehiculo;
         }
     }
 
@@ -35,7 +43,7 @@ public class Vehiculo{
             cantidadDePuertas = parCantidadDePuertas;
         }
     }
-
+    
     public int getCantidadDePuertas(){
         return cantidadDePuertas;
     }
@@ -48,4 +56,10 @@ public class Vehiculo{
         return tipoVehiculo;
     }
 
+    public void desplegarInformacion(){
+        System.out.println("Color              : " + color);
+        System.out.println("Velocidad Maxima   : " + velocidadMaxima);
+        System.out.println("Cantidad de Puertas: " + cantidadDePuertas);
+        System.out.println("Tipo de Vehículo   : " + tipoVehiculo);
+    }
 }

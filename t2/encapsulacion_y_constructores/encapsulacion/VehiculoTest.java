@@ -1,17 +1,13 @@
 public class VehiculoTest{
-    public static void main (String [] arg){
+    public static void main (String [] args){
         Vehiculo miVehiculo = new Vehiculo();
 
-        miVehiculo.setTipoVehiculo("Santa Fe 2010");
+        miVehiculo.setColor("Negro");
+        miVehiculo.setVelocidadMaxima(250);
         miVehiculo.setCantidadDePuertas(5);
-        miVehiculo.setColor("Gris");
-        miVehiculo.setVelocidadMaxima(260);
+        miVehiculo.setTipoVehiculo("Jeepeta");
 
-        System.out.println("\n*** Salida de Objetos ***\n");
-        System.out.println("Tipo de Vehiculo: \t" + miVehiculo.getTipoVehiculo());
-        System.out.println("Cantidad de puertas: \t" + miVehiculo.getCantidadDePuertas());
-        System.out.println("Color: \t\t\t" + miVehiculo.getColor());
-        System.out.println("Velocidad Maxima: \t" + miVehiculo.getVelocidadMaxima());
-        System.out.println();
+        miVehiculo.desplegarInformacion();
+        
     }
 }
