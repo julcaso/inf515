@@ -26,7 +26,8 @@ class IfElseDemo {  //Notación camellada de clases.
         
         // clase Scanner para entrada de datos. //
         Scanner sc = new Scanner(System.in);
-
+        
+        System.out.println("Entre su nota:");
         testScore = sc.nextInt();
         
         if (testscore >= 90) {
