@@ -30,13 +30,13 @@ class IfElseDemo {  //Notación camellada de clases.
         System.out.println("Entre su nota:");
         testScore = sc.nextInt();
         
-        if (testscore >= 90) {
+        if (testScore >= 90) {
             grade = 'A';
-        } else if (testscore >= 80) {
+        } else if (testScore >= 80) {
             grade = 'B';
-        } else if (testscore >= 70) {
+        } else if (testScore >= 70) {
             grade = 'C';
-        } else if (testscore >= 60) {
+        } else if (testScore >= 60) {
             grade = 'D';
         } else {
             grade = 'F';
