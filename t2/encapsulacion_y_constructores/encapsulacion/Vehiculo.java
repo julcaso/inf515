@@ -1,8 +1,11 @@
 /* Encapsulación  o  information  hiding, se da en  los miembros de la case; es decir,
-con los atributos y los métodos. Un miembro atributo está  encapsulado cuando su nivel
-de acceso es privado. Para poder acceder a este atributo privado, se emplea la tecnica
-de crear métodos  de  acceso  llamados  getters y setters  para  setear  valores a los 
-atributos privados y tambien para obtener / consultar los valores de estos atributos. */
+con los atributos y los métodos. Un miembro atributo está  encapsulado cuando el nivel
+de acceso de sus atributos es privado.
+
+Para poder acceder a este atributo privado, se emplea la tecnica de crear  métodos  de 
+acceso  llamados  getters y setters  para  setear  valores a los  atributos privados y 
+tambien  para  obtener / consultar  estos  atributos   desde    otra   clase  o  desde
+la misma clase. */
 
 public class Vehiculo{
     private String color;
